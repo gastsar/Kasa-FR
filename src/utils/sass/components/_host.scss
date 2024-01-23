@@ -1,0 +1,16 @@
+.host{
+@include d-flex($align: center);
+
+&__name{height: 100%;
+    text-align: end;
+display: flex;
+flex-direction: column;
+  & span{
+    margin: 4px;
+  }
+}
+    &__image{
+    border-radius: 50%;
+    margin-left: 10px;
+}
+}

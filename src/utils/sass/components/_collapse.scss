@@ -1,0 +1,46 @@
+.collapse {
+  &__btn,
+  &__details {
+    @include border-radius($radius: 5px);
+  }
+
+  &__btn {
+    @include d-flex($justify: space-between, $align: center);
+    height: 40px;
+    background-color: $primary;
+    color: $light;
+    padding: 0 20px;
+    font-weight: 500;
+    @include small-device {
+      font-size: 13px;
+       padding: 10px;
+    }
+    & .btn {
+      width: 15px;
+      height: 15px;
+    }
+    &__disabled {
+      transition: transform 0.3s ease;
+    }
+    &__active {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+  }
+  &__details {
+    color: $primary;
+    background-color: $secondary;
+    padding: 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    @include small-device {
+       padding: 10px;
+      }
+  }
+  &__details.open {
+    max-height: 1000px; /* Ou ajustez à la hauteur maximale que vous souhaitez */
+    opacity: 1;
+  }
+}

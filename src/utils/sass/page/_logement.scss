@@ -1,0 +1,60 @@
+.logement-container {
+  width: $width-content;
+  margin: 30px auto;
+  @include small-device {
+    width: $width-content-mobile;
+  }
+}
+.lgm {
+  &__carousel {
+    height: 415px;
+    flex-shrink: 0;
+    position: relative;
+    @include small-device {
+      height: 255px;
+    }
+  }
+
+  &__info {
+    @include d-flex($justify: space-between);
+    margin: 40px 0;
+    color: $primary;
+    height: 110px;
+    @include small-device {
+      height: auto;
+    }
+    & .info {
+      height: 100%;
+      @include d-flex($justify: space-between, $direction: column);
+    }
+    & .host-rating {
+      align-items: flex-end;
+      @include small-device {
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+
+  &__collapse {
+    @include d-flex($justify: space-between );
+    width: 100%;
+
+    & .collapse {
+      width: 40%;
+      @include small-device {
+        flex-direction:  column;
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.location{
+
+  & p{
+    margin: 10px 0;
+  }
+}

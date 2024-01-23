@@ -1,0 +1,18 @@
+.about-container{
+    width: $width-content; 
+    margin: 30px  auto;
+    @include small-device {
+        width: $width-content-mobile;
+      }
+}
+
+.about-collapse{
+    @include d-flex();
+    width: 80%;
+    margin: 30px auto;
+    gap: 10px;
+    
+    @include small-device {
+        width: 100%;
+      }
+}

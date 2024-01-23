@@ -1,0 +1,8 @@
+.home-container{
+    width: $width-content; 
+    @include small-device {
+      width: $width-content-mobile;
+    }
+    margin: 30px  auto;
+  
+  }

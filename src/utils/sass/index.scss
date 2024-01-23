@@ -1,0 +1,26 @@
+/* utils*/
+@import './utils/variable';
+@import './utils/mixin';
+
+/* Base */
+@import './base/base';
+
+/* page */
+@import './page/logement';
+@import './page/home';
+@import './page/about';
+
+/* components */
+@import './components/cards';
+@import './components/footer';
+@import './components/header';
+@import './components/cardGalerry';
+@import './components/error';
+@import './components/banner';
+@import './components/collapse';
+@import './components/tags';
+@import './components/host';
+@import './components/carousel';
+@import './components/rating';
+
+

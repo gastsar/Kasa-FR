@@ -1,0 +1,12 @@
+.footer {
+  flex-shrink: 0;
+  @include d-flex($direction: column,$align: center);
+  background-color: $dark;
+  color: $light;
+  gap: 20px;
+  padding: 10px;
+  & div{
+    width: 33%;
+    text-align: center;
+  }
+}

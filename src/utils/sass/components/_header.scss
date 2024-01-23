@@ -1,0 +1,24 @@
+.navbar{
+    @include d-flex($justify:space-between, $align: center);
+    width: $width-content;
+    margin:30px auto 0;
+    @include small-device {
+      width: $width-content-mobile;
+    }
+
+    & svg{
+         @include small-device {
+        width: 120px;
+      }
+    }
+   
+    
+
+     a{
+        padding:0 15px;
+        color: $primary;
+    }
+     .active{
+        text-decoration:underline  ;
+    }
+}

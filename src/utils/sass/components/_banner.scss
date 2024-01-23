@@ -1,0 +1,28 @@
+.banner {
+  margin:  auto;
+  height: 240px;
+  position: relative;
+   @include small-device {
+    height: 150px;
+  }
+
+  &__image,
+  &__title {
+    border-radius: $border-radius;
+    @include position-absolute;
+  }
+  &__image {
+    @include image-fit;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  &__title {
+    @include d-flex($align: center) ;
+    color: $light;
+    font-size:xx-large;
+    font-weight: 500;
+    padding: 20px;
+    z-index: 20;
+    background-color: #0000005e;
+  }
+}

@@ -1,0 +1,14 @@
+.cardGalerry {
+  @include border-radius(25px);
+  background-color: $secondary;
+  padding: 40px 0;
+  margin: 30px auto;
+  gap: 40px 0;
+  @include d-flex($justify: space-evenly, $wrap: wrap);
+  
+  @include small-device {
+    @include d-flex($direction: column);
+    background-color: transparent;
+    margin: auto;
+  }
+}

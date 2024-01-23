@@ -1,0 +1,30 @@
+.cards{
+
+width: 30%;
+height: 340px;
+position: relative;
+@include small-device {
+  width: 100%;
+}
+
+&__title, &__img{
+@include border-radius;
+}
+ &__img{
+
+    @include position-absolute;
+    @include image-fit;
+    overflow: hidden;
+  
+  }
+ &__title{
+   @include d-flex($align: flex-end, $justify:normal);
+    color: $light;
+    padding: 20px;
+    @include position-absolute;
+    z-index: 20;
+    box-shadow: inset 0px -70px 20px 0px rgba(0, 0, 0, 0.5);
+   
+
+ }
+}
